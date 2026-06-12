@@ -1,0 +1,9 @@
+2026-06-11 20:50:05 | INFO     | trading_bot | Logger initialised. Log file: logs/trading_bot_20260611.log
+2026-06-11 20:50:05 | DEBUG    | trading_bot | CLI args received: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': '0.01', 'price': None, 'stop_price': None, 'log_dir': 'logs', 'dry_run': True}
+2026-06-11 20:50:05 | INFO     | trading_bot | Dry run completed — no order sent.
+2026-06-11 20:50:08 | INFO     | trading_bot | Logger initialised. Log file: logs/trading_bot_20260611.log
+2026-06-11 20:50:08 | DEBUG    | trading_bot | CLI args received: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'LIMIT', 'quantity': '0.01', 'price': None, 'stop_price': None, 'log_dir': 'logs', 'dry_run': True}
+2026-06-11 20:50:08 | ERROR    | trading_bot | Input validation failed: A price is required for LIMIT orders.
+2026-06-11 20:50:11 | INFO     | trading_bot | Logger initialised. Log file: logs/trading_bot_20260611.log
+2026-06-11 20:50:11 | DEBUG    | trading_bot | CLI args received: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'STOP_LIMIT', 'quantity': '0.01', 'price': '62100', 'stop_price': '62000', 'log_dir': 'logs', 'dry_run': True}
+2026-06-11 20:50:11 | INFO     | trading_bot | Dry run completed — no order sent.

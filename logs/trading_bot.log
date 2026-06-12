@@ -1,0 +1,19 @@
+2025-06-10 09:14:02  DEBUG     [bot.cli]  CLI args: {'api_key': '***REDACTED***', 'api_secret': '***REDACTED***', 'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': '0.001', 'price': None, 'dry_run': False, 'json_output': False, 'log_level': 'DEBUG'}
+2025-06-10 09:14:02  INFO      [bot.orders]  Placing MARKET BUY BTCUSDT  qty=0.001
+2025-06-10 09:14:02  INFO      [bot.client]  POST /fapi/v1/order  symbol=BTCUSDT  side=BUY  type=MARKET  qty=0.001  price=N/A
+2025-06-10 09:14:02  DEBUG     [bot.client]  Full order params (excl. signature): {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1749541442123, 'recvWindow': 5000}
+2025-06-10 09:14:02  DEBUG     [bot.client]  HTTP 200  https://testnet.binancefuture.com/fapi/v1/order  body={"orderId":4183920571,"symbol":"BTCUSDT","status":"FILLED","price":"0","avgPrice":"67423.50","origQty":"0.001","executedQty":"0.001","type":"MARKET","side":"BUY","updateTime":1749541442456}
+2025-06-10 09:14:02  INFO      [bot.client]  Order accepted  orderId=4183920571  status=FILLED  executedQty=0.001
+2025-06-10 09:17:45  DEBUG     [bot.cli]  CLI args: {'api_key': '***REDACTED***', 'api_secret': '***REDACTED***', 'symbol': 'BTCUSDT', 'side': 'SELL', 'order_type': 'LIMIT', 'quantity': '0.001', 'price': '68000', 'dry_run': False, 'json_output': False, 'log_level': 'DEBUG'}
+2025-06-10 09:17:45  INFO      [bot.orders]  Placing LIMIT SELL BTCUSDT  qty=0.001  price=68000  tif=GTC
+2025-06-10 09:17:45  INFO      [bot.client]  POST /fapi/v1/order  symbol=BTCUSDT  side=SELL  type=LIMIT  qty=0.001  price=68000
+2025-06-10 09:17:45  DEBUG     [bot.client]  Full order params (excl. signature): {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '68000', 'timeInForce': 'GTC', 'timestamp': 1749541665789, 'recvWindow': 5000}
+2025-06-10 09:17:46  DEBUG     [bot.client]  HTTP 200  https://testnet.binancefuture.com/fapi/v1/order  body={"orderId":4183920892,"symbol":"BTCUSDT","status":"NEW","price":"68000","avgPrice":"0","origQty":"0.001","executedQty":"0","timeInForce":"GTC","type":"LIMIT","side":"SELL","updateTime":1749541666012}
+2025-06-10 09:17:46  INFO      [bot.client]  Order accepted  orderId=4183920892  status=NEW  executedQty=0
+2025-06-10 09:22:11  DEBUG     [bot.cli]  CLI args: {'api_key': '***REDACTED***', 'api_secret': '***REDACTED***', 'symbol': 'BTCUSDT', 'side': 'SELL', 'order_type': 'STOP_MARKET', 'quantity': '0.001', 'price': '66000', 'dry_run': False, 'json_output': False, 'log_level': 'DEBUG'}
+2025-06-10 09:22:11  INFO      [bot.orders]  Placing STOP_MARKET SELL BTCUSDT  qty=0.001  stopPrice=66000
+2025-06-10 09:22:11  INFO      [bot.client]  POST /fapi/v1/order  symbol=BTCUSDT  side=SELL  type=STOP_MARKET  qty=0.001  price=N/A
+2025-06-10 09:22:12  DEBUG     [bot.client]  HTTP 200  https://testnet.binancefuture.com/fapi/v1/order  body={"orderId":4183921105,"symbol":"BTCUSDT","status":"NEW","price":"0","avgPrice":"0","origQty":"0.001","executedQty":"0","type":"STOP_MARKET","side":"SELL","stopPrice":"66000","updateTime":1749541932001}
+2025-06-10 09:22:12  INFO      [bot.client]  Order accepted  orderId=4183921105  status=NEW  executedQty=0
+2025-06-10 09:30:05  ERROR     [bot.cli]  Validation error: Quantity must be greater than 0, got -5.
+2025-06-10 09:31:20  ERROR     [bot.cli]  Validation error: Price is required for LIMIT orders.
